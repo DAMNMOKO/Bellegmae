@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#bd6fdeb2">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/changku"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/yifu_changku"
+        android:background="#00000000"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/duanku"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/yifu_changku"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/yifu_duanku"
+        android:background="#00000000"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/huangshangyi"
+        android:id="@+id/yifu_huangshangyi"
+        android:layout_toRightOf="@id/yifu_duanku"
+        android:layout_alignTop="@id/yifu_duanku"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lanshangyi"
+        android:id="@+id/yifu_lanshangyi"
+        android:layout_below="@id/yifu_changku"
+        android:layout_marginTop="50dp"
+        android:background="#00000000"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/taozhuang"
+        android:id="@+id/yifu_taozhuang"
+        android:layout_below="@id/yifu_huangshangyi"
+        android:layout_alignEnd="@id/yifu_huangshangyi"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"/>
+
+</RelativeLayout>

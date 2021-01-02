@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativelayout"
+    android:background="@mipmap/game">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/woman_main"
+       android:layout_centerVertical="true"
+       android:id="@+id/women_img"
+       android:layout_marginLeft="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cda3ccf7"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/game_btn_peishi"
+                android:text="配饰" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/game_btn_yifu"
+                android:text="衣服" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/game_btn_xiezi"
+                android:text="鞋子" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/game_Linear"
+            android:background="#bd6fdeb2"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/game_btn_Save"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/game_btn_reset"
+        android:layout_toLeftOf="@id/game_btn_Save"
+        android:layout_marginRight="70dp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:src="@mipmap/trash"
+        android:id="@+id/game_img_trash"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/game_btn_Save"
+        android:layout_marginLeft="70dp"/>
+
+    <Button
+        android:id="@+id/game_btn_fanhui"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:text="返回" />
+</RelativeLayout>
